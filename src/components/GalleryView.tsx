@@ -26,7 +26,7 @@ const GalleryView: React.FC = () => {
         setCategories(categoriesData);
         setAreas(areasData);
         
-        // Load meals from first few categories to populate gallery
+        
         if (categoriesData.length > 0) {
           const initialMeals = await Promise.all(
             categoriesData.slice(0, 3).map(cat => 
